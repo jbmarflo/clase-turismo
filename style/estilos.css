@@ -1,0 +1,58 @@
+body {
+	background: #475160;
+	margin:0; /* Pongo 0 porque body por default tiene 8px*/
+}
+
+/*Menu*/
+#nav {
+	height: 40px;
+	width: 96%;
+	padding: 20px 2%;
+}
+
+#mobile {
+	width: 50px;
+	height: 20px;
+	margin-top: -40px;
+	float: right;
+}
+
+#mobile span {
+	display: block;
+	cursor: pointer;
+	margin: 6px 0;
+	border-radius: 5px;
+	height: 7px;
+	width: 100%;
+	background: white;
+}
+
+/*Banner*/
+#banner {
+	background: #48D7B7;
+	padding: 20px 0;
+}
+
+#banner h1 {
+	font-family: Open Sans;
+	margin: 0;
+	margin-bottom: 6px;
+	text-align: center;
+	font-size: 27px;
+}
+
+#banner p {
+	font-family: Open Sans;
+	margin: 0;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+}
+
+#banner img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
