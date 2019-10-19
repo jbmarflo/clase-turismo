@@ -16,12 +16,19 @@ function sendContact (event) {
 		description = document.getElementsByName('comments')[0].value
 
 	if (!name) {
-		alert('Completa el nombre')
+		// alert('Completa el nombre')
+		document.getElementsByClassName('error')[0].innerHTML = "Completa el nombre"
+		document.getElementsByClassName('error')[0].style.display = "block"
+		// console.log(document.getElementsByClassName('error'))
 		return false
 	} else if (!email) {
-		alert('Completa tu correos')
+		document.getElementsByClassName('error')[0].innerHTML = "Completa tu correos"
+		document.getElementsByClassName('error')[0].style.display = "block"
 		return false
-	}	
+	}
+
+	document.getElementsByClassName('error')[0].innerHTML = ""
+	document.getElementsByClassName('error')[0].style.display = "none"	
 
 	location.href = "https://www.facebook.com/login/?email=" + email
 }
