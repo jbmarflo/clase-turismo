@@ -72,7 +72,9 @@ body {
 	display: block;
 	margin: 0 auto;
 }
-
+#nav ul{
+	display: none;
+}
 /**********
 Contact
 *********/
@@ -109,9 +111,89 @@ Contact
 	color: white;
 } 
 
+
 #contact form .error {
 	color: red;
 	display: none;
+}
+/* Cards Travels*/
+
+.effect-rounded {
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+#travel .card{
+	width: 94%;
+	margin: 20px 3%;
+}
+#travel .card figure{
+	margin: 0; 
+	position: relative;
+}
+
+#travel .card .content{
+	background-color: white;
+	padding: 20px 2%;
+
+}
+#travel .card .content a {
+	display: block;
+	width: 100%;
+	color: #FF9900;
+	text-align: center;
+}
+
+#travel .card .content ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+#travel .card figure .price {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(49, 49, 49, 0.8);
+	color: white;
+	padding: 8px;
+	font-size: 12px;
+}
+
+#travel .card img.picture{
+	width: 100%; 
+}
+
+@media screen and (min-width:1000px) {
+  /* reglas CSS */
+  	#travel {
+  		display: flex;
+  		justify-content: center;
+  	}
+  	#mobile {
+  		display: none;
+  	}
+  	#travel .card{
+  		flex: 1;
+		width: 200px;
+		margin: 20px 10px;
+	}
+	#brand {
+		float: left;
+	}
+	#nav ul{
+		display: flex;
+		float: right;
+		width: 70%;
+	}
+	#nav ul li{
+		flex: 1;
+		list-style: none;
+	}
+	#nav ul li a{ 
+		text-decoration: none;
+
+		color: white;
+	}
 }
 
 
